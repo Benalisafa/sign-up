@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>Intro component with sign up form</title>
+
+</head>
+<body>
+
+
+ 
+    <div class="container">
+
+      <div class="left-block"> 
+         <h1>Learn to code by watching others</h1>
+
+          <p>See how experienced developers solve problems in real-time. Watching scripted tutorials is great, 
+        but understanding how developers think is invaluable.</p> 
+      </div>
+
+      <div class="right-block">
+        <div class="top-right"><a href="#">Try it free 7 days</a> then $20/mo. thereafter</div>
+        <div class="bottom-right container-form">
+          <form name="signUp"  onsubmit="return validateForm()" method="post">
+            <input type="text" id="fname" name="firstname" placeholder="First Name" oninput="removeError(this)">
+            <div id="fname-error" class="error-message"></div>
+            <input type="text" id="lname" name="lastname" placeholder="Last Name" oninput="removeError(this)">
+            <div id="lname-error" class="error-message"></div>
+            <input type="text" id="mail" name="email" placeholder="Email Address" oninput="removeError(this)">
+            <div id="mail-error" class="error-message"></div>
+            <input type="password" id="pw" name="password" placeholder="Password" oninput="removeError(this)">
+            <div id="pw-error" class="error-message"></div>
+            <input type="submit" value="Claim your free trial">
+          </form>
+          <p>By clicking the button, you are agreeing to our <a href="#">Terms and Services</a></p>
+        </div>
+        
+      </div>
+    </div>
+  
+    <script src="main.js"></script>
+</body>
+</html>
