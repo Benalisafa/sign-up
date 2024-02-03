@@ -155,7 +155,27 @@ body {
     border: 2px solid var(--color-red);
   }
 
+  .input-container {
+    position: relative;
+}
 
+.error-icon {
+    position: absolute;
+    top: 50%;                                                 /* Centers vertically of the container's height.*/
+    right: 20px; 
+    
+    color: var(--color-red); 
+    
+    pointer-events: none; 
+    /* content: url(images/icon-error.svg); */
+    width: 19px;
+   
+    
+} 
+
+.error-box{
+  border: 2px solid var(--color-red);
+}
 
 
 

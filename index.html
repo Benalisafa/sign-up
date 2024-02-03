@@ -25,13 +25,30 @@
         <div class="top-right"><a href="#">Try it free 7 days</a> then $20/mo. thereafter</div>
         <div class="bottom-right container-form">
           <form name="signUp"  onsubmit="return validateForm()" method="post">
+
+            <div class="input-container">
             <input type="text" id="fname" name="firstname" placeholder="First Name" oninput="removeError(this)">
+            <span class="error-icon" id="fname-error-icon"></span>
+          </div>
             <div id="fname-error" class="error-message"></div>
+
+            <div class="input-container">
             <input type="text" id="lname" name="lastname" placeholder="Last Name" oninput="removeError(this)">
+            <span class="error-icon" id="lname-error-icon"> </span>
+          </div>
             <div id="lname-error" class="error-message"></div>
+            
+
+            <div class="input-container">
             <input type="text" id="mail" name="email" placeholder="Email Address" oninput="removeError(this)">
+            <span class="error-icon" id="mail-error-icon"> </span>
+          </div>
             <div id="mail-error" class="error-message"></div>
+
+            <div class="input-container">
             <input type="password" id="pw" name="password" placeholder="Password" oninput="removeError(this)">
+            <span class="error-icon" id="pw-error-icon"> </span>
+          </div>
             <div id="pw-error" class="error-message"></div>
             <input type="submit" value="Claim your free trial">
           </form>
